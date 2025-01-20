@@ -22,7 +22,7 @@ env:
 jobs:
   docker:
     # Disable the job in forks
-    if: ${{ github.event_name == 'pull_request' || github.repository_owner == 'espressif' }}
+    if: ${{ github.event_name == 'pull_request' || github.repository_owner == 'gnathvm' }}
     name: Build docker image and push if needed
     runs-on: ubuntu-latest
     steps:
